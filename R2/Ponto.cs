@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace Metria
+namespace Metria.R2
 {
 	/// <summary>
 	/// Um ponto em R²
@@ -67,7 +67,8 @@ namespace Metria
 			this._x = 0;
 			this._y = 0;
 		}
-
+		#endregion
+		#region Serialização
 		public Ponto(SerializationInfo info, StreamingContext ctxt)
 		{
 			this._x = (float)info.GetValue("_x", typeof(float));
@@ -134,7 +135,7 @@ namespace Metria
 		/// Retorna o ponto oposto
 		/// </summary>
 		/// <returns>Ponto oposto</returns>
-		private Ponto  RetornaNegativo()
+		private Ponto  RetornaOposto()
 		{
 			return new Ponto(-this.X, -this.Y);
 		}

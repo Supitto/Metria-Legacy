@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Metria
+namespace Metria.R2
 {
 	public class Delaunay
 	{

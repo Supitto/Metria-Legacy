@@ -41,19 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArestaDelaunay.cs" />
-    <Compile Include="Base.cs" />
-    <Compile Include="Circulo.cs" />
-    <Compile Include="Delaunay.cs" />
-    <Compile Include="FechoConvexo.cs" />
-    <Compile Include="Plano.cs" />
-    <Compile Include="Ponto.cs" />
+    <Compile Include="R2\ArestaDelaunay.cs" />
+    <Compile Include="R2\Base.cs" />
+    <Compile Include="R2\Circulo.cs" />
+    <Compile Include="R2\Delaunay.cs" />
+    <Compile Include="R2\FechoConvexo.cs" />
+    <Compile Include="R2\Plano.cs" />
+    <Compile Include="R2\Ponto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reta.cs" />
-    <Compile Include="SegmentoDeReta.cs" />
-    <Compile Include="Triangulo.cs" />
-    <Compile Include="TrianguloDelaunay.cs" />
-    <Compile Include="Vetor.cs" />
+    <Compile Include="R2\Reta.cs" />
+    <Compile Include="R2\SegmentoDeReta.cs" />
+    <Compile Include="R2\Triangulo.cs" />
+    <Compile Include="R2\TrianguloDelaunay.cs" />
+    <Compile Include="R2\Vetor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

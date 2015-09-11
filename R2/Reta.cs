@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Metria
+namespace Metria.R2
 {
 	public class Reta
 	{
@@ -75,7 +75,9 @@ namespace Metria
 		#region Construtores
 		protected Reta()
 		{
-
+			_diretor= new Vetor(1,1);
+			_origem= new Ponto();
+			calculaCoeficiente();
 		}
 		/// <summary>
 		/// Reta que parte de um ponto origem O e tem como direção o vetor diretor D
@@ -90,8 +92,10 @@ namespace Metria
 				_diretor = Diretor;
 				calculaCoeficiente();
 			}
-			else 
-			throw new Exception("Não é possivel criar uma reta com um vetor diretor nulo");
+			else
+			{ 
+				throw new Exception("Não é possivel criar uma reta com um vetor diretor nulo, a reta identidade foi criada no lugar");
+			}
 		}
 
 		/// <summary>

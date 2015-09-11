@@ -4,12 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Metria
+namespace Metria.R2
 {
 	
 	public class Vetor : Ponto
 	{
-
+		#region Variaveis
+		private float _norma;
+		public float Norma
+		{
+			get
+			{
+				return _norma;
+			}
+		}
+		#endregion
 		#region Construtores
 
 		/// <summary>
@@ -21,6 +30,7 @@ namespace Metria
 		{
 			_x = X;
 			_y = Y;
+			calculaNorma();
 
 		}
 
@@ -32,6 +42,7 @@ namespace Metria
 		{
 			_x = Diretor.X;
 			_y = Diretor.Y;
+			calculaNorma();
 		}
 
 		/// <summary>
@@ -43,6 +54,7 @@ namespace Metria
 		{
 			_x = B.X - A.X;
 			_y = B.Y - A.Y;
+			calculaNorma();
 		}
 
 		/// <summary>
@@ -52,6 +64,7 @@ namespace Metria
 		{
 			_x = 0;
 			_y = 0;
+			_norma = 0;
 		}
 		#endregion
 		#region Metodos
@@ -62,17 +75,18 @@ namespace Metria
 		/// <returns>Vesor</returns>
 		public Vetor Vesor()
 		{
-			float norma = Norma();
-			return new Vetor(_x/norma,_y/norma);
+			if(Norma!=0)
+				return new Vetor(_x/Norma,_y/Norma);
+			return null;
 		}
 
 		/// <summary>
 		/// Retorna o modulo do vetor
 		/// </summary>
 		/// <returns>Modulo</returns>
-		public float Norma()
+		private void calculaNorma()
 		{
-			return (float)(Math.Sqrt(_x*_x + _y*_y));
+			_norma = (float)(Math.Sqrt(_x*_x + _y*_y));
 		}
 
 		/// <summary>
