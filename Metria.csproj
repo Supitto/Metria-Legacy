@@ -54,6 +54,7 @@
     <Compile Include="R2\Triangulo.cs" />
     <Compile Include="R2\TrianguloDelaunay.cs" />
     <Compile Include="R2\Vetor.cs" />
+    <Compile Include="R3\Plano.cs" />
     <Compile Include="R3\Ponto.cs" />
     <Compile Include="R3\Vetor.cs" />
   </ItemGroup>
