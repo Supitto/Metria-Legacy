@@ -21,26 +21,19 @@ namespace Metria.R3
 		#region Construtores
 		public Vetor()
 		{
-			_z = 0;
-			_norma = 0;
+			_x = 1;
+			_y = 1;
+			_z = 1;
+			calculaNorma();
 		}
 		public Vetor(float x, float y, float z)
 		{
 			_x = x;
 			_y = y;
 			_z = z;
-			_norma = 0;
+			calculaNorma();
 		}
-		public Vetor()
-		{
-			_z = 0;
-			_norma = 0;
-		}
-		public Vetor()
-		{
-			_z=0;
-			_norma = 0;
-		}
+		
 
 
 		#endregion

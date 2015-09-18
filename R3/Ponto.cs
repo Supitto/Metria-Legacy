@@ -9,8 +9,8 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Metria.R3
 {
-	[Serializable()]
-	class Ponto : ISerializable
+	//[Serializable()]
+	class Ponto //: ISerializable
 	{
 		#region Variaveis
 

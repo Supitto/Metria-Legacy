@@ -56,7 +56,7 @@ namespace Metria.R2
 			_vizinho1 = vizinho1;
 			_vizinho2 = vizinho2;
 			_vizinho3 = vizinho3;
-			_circuncentro = new SegmentoDeReta(A, B).Intersecta(new Reta(A, B));
+			_circuncentro = new SegmentoDeReta(A, B).Intersecta(new Reta(A, C));
 			_circunscrito = new Circulo(Circuncentro, A.RetornaDistancia(Circuncentro));
 
 		}
