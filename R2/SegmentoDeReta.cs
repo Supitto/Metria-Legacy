@@ -78,6 +78,30 @@ namespace Metria.R2
 			return 4;
 		}
 		*/
+		public Ponto PontoMedio()
+		{
+			return new Ponto((Origem.X+PontoB.X)/2,(Origem.Y+PontoB.Y)/2);
+		}
+
+		public Reta Mediatriz()
+		{
+			return new Reta(PontoMedio(),Diretor.RetornaOrtogonal());
+		}
+
+		public int PosicaoPonto(Ponto P)
+		{
+			if((Diretor.Y>0 && P.X>Origem.X && P.X<PontoB.X)||(Diretor.Y <= 0 && P.X <= Origem.X && P.X >= PontoB.X))
+			{
+				float escalar = Diretor.RetornaOrtogonal().ProdutoEscalar(new Vetor(Origem, P));
+				if (escalar > 0)
+					return 0;
+				if (escalar < 0)
+					return 1;
+				if (escalar == 0)
+					return 2;
+			}
+			return 3;
+		}
 	#endregion
 	}
 }

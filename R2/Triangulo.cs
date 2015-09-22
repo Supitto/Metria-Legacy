@@ -117,7 +117,7 @@ namespace Metria.R2
 		/// <returns>Circuncentro</returns>
 		private Ponto retornaCircuncentro()
 		{
-			return new Reta(PontoA,PontoB).Intersecta(new Reta(PontoB,PontoC));
+			return new SegmentoDeReta(PontoA,PontoB).Mediatriz().Intersecta(new SegmentoDeReta(PontoA,PontoB).Mediatriz());
 		}
 		/// <summary>
 		/// Retorna a posição relativa de um ponto P em relação ao triangulo
