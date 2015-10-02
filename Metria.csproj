@@ -57,6 +57,7 @@
     <Compile Include="R3\Plano.cs" />
     <Compile Include="R3\Ponto.cs" />
     <Compile Include="R3\Reta.cs" />
+    <Compile Include="R3\SegmentoDeReta.cs" />
     <Compile Include="R3\Vetor.cs" />
   </ItemGroup>
   <ItemGroup />

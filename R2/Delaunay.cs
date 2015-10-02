@@ -15,14 +15,11 @@ namespace Metria.R2
 			{
 				return _triangulos;
 			}
-
 		}
-
 		public void porFecho()
 		{
 
 		}
-
 		private void porIncremental(ref List<Ponto> _pontos)
 		{
 			int qtd = 0;//
@@ -65,12 +62,7 @@ namespace Metria.R2
 			{
 				adcionaPonto(_pontos[i]);
 			}
-			
-	
 		}
-
-
-
 		public Delaunay(ref List<Ponto> pontos)
 		{
 			_triangulos = new List<TrianguloDelaunay>();

@@ -77,7 +77,7 @@ namespace Metria.R2
 			}
 		}
 		#endregion
-		#region Construtoreslic
+		#region Construtores
 		protected Triangulo() { }
 
 		/// <summary>
